@@ -1,0 +1,20 @@
+# Never commit secrets or certificate private keys
+*.key
+*.pfx
+*.p12
+*.ovpn
+*.scx
+*.psk
+*.secret
+*.secrets
+*password*
+*pre_shared_key*
+
+# Exported logs may contain personal or security-sensitive data
+logs/
+exports/
+
+# Common local files
+.DS_Store
+Thumbs.db
+

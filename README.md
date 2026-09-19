@@ -48,3 +48,22 @@ This deployment uses **AD username/password authentication over secure LDAPS**. 
 No passwords, private keys, pre-shared keys, exported secret material, live public addresses, real usernames, certificate thumbprints, or production DNS names are stored in this repository. Scripts request sensitive values interactively.
 
 All addresses and names in this public repository are examples or RFC 5737 documentation values. Adapt them to an authorized lab environment.
+
+---
+
+## Consulting relevance
+
+This project demonstrates the architecture and operational thinking required for secure remote-access engagements involving identity, PKI, firewall policy, VPN authorization, and privileged administration.
+
+Typical consulting use cases include:
+
+- secure remote-access architecture;
+- firewall and VPN modernization;
+- Active Directory / LDAPS integration;
+- PKI and certificate-trust design;
+- role-based access segmentation;
+- administrative-access hardening;
+- implementation documentation and operational handoff.
+
+**Consulting inquiries:** advisory@cloudgenius.ca · https://cloudgenius.ca
+

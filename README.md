@@ -2,6 +2,37 @@
 
 **Client overview:** [Client-facing case study](./CASE-STUDY.md)
 
+## Outcome & Evidence
+
+| Evidence | Result |
+|---|---|
+| Centralized identity | Active Directory-backed authentication |
+| Directory security | Certificate-validated LDAPS |
+| Authorization | AD security groups mapped to VPN policy |
+| Role separation | Student, instructor, and privileged-administration patterns |
+| Remote access | SSL VPN with split-tunnel access |
+| End-to-end validation | Fresh AD test user + new Sophos Connect profile successfully established an SSL/TCP tunnel |
+| Public-repo hygiene | Secrets, private keys, live public addresses, real usernames, and production DNS values excluded |
+
+**Proof:** [Implementation record](./docs/implementation-record.md) · [Security hardening](./docs/security-hardening.md) · [Client-facing case study](./CASE-STUDY.md)
+
+## Architecture at a glance
+
+```mermaid
+flowchart LR
+    U[Remote User] --> C[Sophos Connect]
+    C --> F[Sophos Firewall]
+    F --> L[LDAPS]
+    L --> AD[Active Directory]
+    AD --> G[AD Security Groups]
+    G --> P[Role-Based VPN Policy]
+    CA[Enterprise CA / PKI] --> L
+    P --> R[Approved Internal Resources]
+    P --> A[Restricted Admin Access]
+```
+
+---
+
 Technical and business record of the CloudGenius Active Directory, PKI, LDAPS, Sophos Firewall, and SSL VPN integration completed on **August 11, 2026**.
 
 ## Outcome

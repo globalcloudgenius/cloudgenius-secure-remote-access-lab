@@ -1,5 +1,7 @@
 # CloudGenius Secure Remote Access
 
+**Client overview:** [Client-facing case study](./CASE-STUDY.md)
+
 Technical and business record of the CloudGenius Active Directory, PKI, LDAPS, Sophos Firewall, and SSL VPN integration completed on **August 11, 2026**.
 
 ## Outcome
